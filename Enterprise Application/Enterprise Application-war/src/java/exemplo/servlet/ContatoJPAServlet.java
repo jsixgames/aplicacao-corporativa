@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package exemplo.servlet;
 
 import exemplo.jpa.Contato;
@@ -16,10 +12,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- *
- * @author Calebe de Paula Bianchini
- */
 @WebServlet(name = "ContatoJPAServlet", urlPatterns = {"/ContatoJPAServlet"})
 public class ContatoJPAServlet extends HttpServlet {
 
@@ -47,7 +39,6 @@ public class ContatoJPAServlet extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Lista de Contatos</h1>");
-
             out.println("<h2>Cadastrar Contatos</h2>");
             out.println("<form action=\"ContatoJPAServlet\" method=\"post\">");
             out.println("<table>\n<tr>");
